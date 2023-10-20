@@ -1,12 +1,4 @@
 class Celsci:
-    def __init__(self,**keys):
-        #print("this happens")
-        self.celscilist = {
-        'dd':{'x':{'followers': 1100}},
-        'jp':{'x':{'followers': 300}},
-        'sh':{'x':{'followers': 200}},
-        'gs':{'x':{'followers': 100}}
-        }
     celscilist = {
     'dd':{'x':{'followers': 1200}},
     'jp':{'x':{'followers': 300}},

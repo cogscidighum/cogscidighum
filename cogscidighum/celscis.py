@@ -1,5 +1,4 @@
-
-class Celsci():
+class Celsci:
     def __init__(self,**keys):
         #print("this happens")
         self.celscilist = {
@@ -15,14 +14,15 @@ class Celsci():
     'gs':{'x':{'followers': 100}}
     }
     asname="aso1"
-    def fame(self,x):
+    def fame(x):
         y="low"
         if x>300:
             y= 'high'
         return y
-    def checkfame(self,x1):
-        person = self.fame(celscilist[x1]['x']['followers'])
-        return person
+        
+def checkfame(x1):
+    person = Celsci.fame(Celsci.celscilist[x1]['x']['followers'])
+    return person
      
  #def checkfame1(x2):
  #   person = x2 + "-aso"

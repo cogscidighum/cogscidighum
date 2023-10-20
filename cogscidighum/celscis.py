@@ -20,5 +20,5 @@ def checkfame(x1):
  #   person = x2 + "-aso"
  #   return person
     
-for person in celscilist:
-    print(person,checkfame(person))
+for person in Celsci.celscilist:
+    print(person,Celsci.checkfame(person))

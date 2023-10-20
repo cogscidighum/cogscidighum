@@ -19,6 +19,6 @@ class Celsci(self):
  #   person = x2 + "-aso"
  #   return person
     
-#for person in Celsci.celscilist:
-#    #dh=ic(person,Celsci.checkfame(person))
-#    print(person,Celsci.checkfame(person))
+for person in Celsci.celscilist:
+    #dh=ic(person,Celsci.checkfame(person))
+    print(person,Celsci.checkfame(person))

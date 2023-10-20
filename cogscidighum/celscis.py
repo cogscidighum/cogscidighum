@@ -1,13 +1,21 @@
 
-class Celsci():
-    celscilist = {
+class Celsci(self):
+    def __init__(self,log=None,**keys):
+        #print("this happens")
+        self.celscilist = {
+        'dd':{'x':{'followers': 1000}},
+        'jp':{'x':{'followers': 300}},
+        'sh':{'x':{'followers': 200}},
+        'gs':{'x':{'followers': 100}}
+        }
+    self.celscilist = {
     'dd':{'x':{'followers': 1000}},
     'jp':{'x':{'followers': 300}},
     'sh':{'x':{'followers': 200}},
     'gs':{'x':{'followers': 100}}
     }
     asname="aso"
-    def fame(x):
+    def fame(self,x):
         y="low"
         if x>300:
             y= 'high'

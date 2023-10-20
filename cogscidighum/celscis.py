@@ -20,14 +20,14 @@ class Celsci(self):
         if x>300:
             y= 'high'
         return y
-"def checkfame(x1):
-"    person = fame(celscilist[x1]['x']['followers'])
-"    return person
+def checkfame(x1):
+    person = fame(celscilist[x1]['x']['followers'])
+    return person
      
  #def checkfame1(x2):
  #   person = x2 + "-aso"
  #   return person
     
-"for person in celscilist:
-"    #dh=ic(person,checkfame(person))
-"    print(person,checkfame(person))
+for person in celscilist:
+    #dh=ic(person,checkfame(person))
+    print(person,checkfame(person))

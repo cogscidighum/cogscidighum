@@ -15,12 +15,12 @@ class Celsci():
     'gs':{'x':{'followers': 100}}
     }
     asname="aso1"
-    def fame(self,x):
+    def fame(x):
         y="low"
         if x>300:
             y= 'high'
         return y
-    def checkfame(self,x1):
+    def checkfame(x1):
         person = fame(celscilist[x1]['x']['followers'])
         return person
      

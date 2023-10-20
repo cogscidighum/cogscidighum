@@ -1,6 +1,6 @@
 class Celsci(self):
     self.celscilist = {
-    'dd':{'x':{'followers': 900}},
+    'dd':{'x':{'followers': 1000}},
     'jp':{'x':{'followers': 300}},
     'sh':{'x':{'followers': 200}},
     'gs':{'x':{'followers': 100}}

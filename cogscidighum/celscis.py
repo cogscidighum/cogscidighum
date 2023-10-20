@@ -15,7 +15,7 @@ class Celsci():
     'gs':{'x':{'followers': 100}}
     }
     asname="aso1"
-    def fame(x):
+    def fame(self,x):
         y="low"
         if x>300:
             y= 'high'

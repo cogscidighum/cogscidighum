@@ -1,11 +1,11 @@
-celscilist = {
-'dd':{'x':{'followers': 1000}},
-'jp':{'x':{'followers': 300}},
-'sh':{'x':{'followers': 200}},
-'gs':{'x':{'followers': 100}}
-}
-class Celsci():
 
+class Celsci():
+    celscilist = {
+    'dd':{'x':{'followers': 1000}},
+    'jp':{'x':{'followers': 300}},
+    'sh':{'x':{'followers': 200}},
+    'gs':{'x':{'followers': 100}}
+    }
     asname="aso"
     def fame(x):
         y="low"

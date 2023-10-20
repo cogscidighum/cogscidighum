@@ -1,6 +1,6 @@
 from setuptools import setup
 
-import celsci
+import cogscidighum
 
 setup(
     name='cogscidighum',

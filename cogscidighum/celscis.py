@@ -16,7 +16,7 @@ class Celsci(self):
         person = fame(celscilist[x1]['x']['followers'])
         return person
  def checkfame1(x2):
-    person = c2 + "-aso"
+    person = x2 + "-aso"
     return person
     
 for person in Celsci.celscilist:

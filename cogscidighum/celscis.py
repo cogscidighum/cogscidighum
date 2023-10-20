@@ -13,7 +13,7 @@ class Celsci:
         return y
         
      def checkfame(x1):
-        person = fame(Celsci.celscilist[x1]['x']['followers'])
+        person = fame(celscilist[x1]['x']['followers'])
         return person
 
     

@@ -21,7 +21,7 @@ class Celsci():
             y= 'high'
         return y
     def checkfame(x1):
-        person = fame(celscilist[x1]['x']['followers'])
+        person = self.fame(celscilist[x1]['x']['followers'])
         return person
      
  #def checkfame1(x2):

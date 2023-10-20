@@ -20,7 +20,7 @@ class Celsci():
         if x>300:
             y= 'high'
         return y
-    def checkfame(x1):
+    def checkfame(self,x1):
         person = self.fame(celscilist[x1]['x']['followers'])
         return person
      

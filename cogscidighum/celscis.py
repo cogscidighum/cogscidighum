@@ -1,17 +1,17 @@
-class Celsci(self,ax=ax):
+class Celsci:
     celscilist = {
     'dd':{'x':{'followers': 1200}},
     'jp':{'x':{'followers': 300}},
     'sh':{'x':{'followers': 200}},
     'gs':{'x':{'followers': 100}}
     }
-    ax1=ax
+    #ax1="dd"
     def fame(x):
         y="low"
         if x>300:
             y= 'high'
         return y
-    asname2= fame(ax1)
+    asname2= fame(Celsci.celscilist["dd"]['x']['followers'])
 def checkfame(x1):
     person = Celsci.fame(Celsci.celscilist[x1]['x']['followers'])
     return person
@@ -20,5 +20,5 @@ def checkfame(x1):
  #   person = x2 + "-aso"
  #   return person
     
-for person in Celsci.celscilist:
-    print(person,checkfame(person))
+#for person in Celsci.celscilist:
+#    print(person,checkfame(person))

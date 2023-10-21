@@ -6,16 +6,16 @@ class Celsci:
     'gs':{'x':{'followers': 100}}
     }
     #ax1="dd"
-    def fame(x):
+    def fame():
+        x=celscilist["dd"]['x']['followers']
         y="low"
         if x>300:
             y= 'high'
         return y
-    asname2= fame(Celsci.celscilist["dd"]['x']['followers'])
-def checkfame(x1):
-    xy=Celsci.celscilist[x1]['x']['followers']
-    person = Celsci.fame(xy)
-    return person
+#def checkfame(x1):
+#    xy=Celsci.celscilist[x1]['x']['followers']
+#    person = Celsci.fame(xy)
+#    return person
      
  #def checkfame1(x2):
  #   person = x2 + "-aso"

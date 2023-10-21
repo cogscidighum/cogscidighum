@@ -21,4 +21,4 @@ def checkfame(x1):
  #   return person
     
 for person in Celsci.celscilist:
-    print(person,Celsci.checkfame(person))
+    print(person,checkfame(person))

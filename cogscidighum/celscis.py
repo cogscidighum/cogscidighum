@@ -1,5 +1,5 @@
 class Celsci:
-    ax1='dd'
+    ax1='dd2'
     celscilist = {
     'dd':{'x':{'followers': 1200}},
     'jp':{'x':{'followers': 300}},

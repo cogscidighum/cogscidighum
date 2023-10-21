@@ -5,13 +5,14 @@ class Celsci:
     'sh':{'x':{'followers': 200}},
     'gs':{'x':{'followers': 100}}
     }
-    #ax1="dd"
+    ax1="dd"
     def fame():
         x=celscilist["dd"]['x']['followers']
         y="low"
         if x>300:
             y= 'high'
         return y
+    ax2=fame()
 #def checkfame(x1):
 #    xy=Celsci.celscilist[x1]['x']['followers']
 #    person = Celsci.fame(xy)

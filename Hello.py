@@ -27,19 +27,19 @@ def run():
 
     client = Client("https://osaaso-ytscrap.hf.space/")
     result = client.predict(
-				"https://www.youtube.com/watch?v=prt9D90BvFI",	# str in 'link' Textbox component
+				"https://youtu.be/vQUCSHUlN-k?si=FfIsODGjJDzIHOAS",	# str in 'link' Textbox component
 				api_name="/predict"
     )
     print("The talk by Rob West on Altruism has viewcounts of ", result)
 
-    st.sidebar.header("The talk by Rob West on Altruism has viewcounts of : "+ str(result))
+    st.sidebar.header("The talk by Rob West on Altruism has viewcounts of : " + str(result))
     st.title(str(result))
 
     st.markdown(
         """
-    Welcome 
+    The Video: 
     
-    :pencil: [Open](https://www.youtube.com/watch?v=prt9D90BvFI)    
+    :pencil: [Open](https://youtu.be/vQUCSHUlN-k?si=FfIsODGjJDzIHOAS)    
     """
     )
     st.image("img/demo.gif")

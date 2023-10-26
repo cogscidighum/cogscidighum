@@ -33,7 +33,7 @@ def run():
     print("The talk by Rob West on Altruism has viewcounts of ", result)
 
     st.sidebar.header("The talk by Rob West on Altruism has viewcounts of : " + str(result))
-    st.title(str(result))
+    st.title("The talk by Rob West on Altruism has viewcounts of : " + str(result))
 
     st.markdown(
         """

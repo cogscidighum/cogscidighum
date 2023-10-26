@@ -30,8 +30,9 @@ def run():
 				api_name="/predict"
     )
     print("The talk by Rob West on Altruism has viewcounts of ", result)
-    st.sidebar.header("aso2: "+ str(result))
-    st.title(result)
+
+    st.sidebar.header("The talk by Rob West on Altruism has viewcounts of : "+ str(result))
+    st.title(str(result))
 
     st.markdown(
         """

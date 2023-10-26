@@ -15,7 +15,7 @@
 import streamlit as st
 from streamlit.logger import get_logger
 from gradio_client import Client
-import gradio
+import gradio as gr
 
 LOGGER = get_logger(__name__)
     
@@ -42,7 +42,6 @@ def run():
     :pencil: [Open](https://youtu.be/vQUCSHUlN-k?si=FfIsODGjJDzIHOAS)    
     """
     )
-    st.image("img/demo.gif")
     st.markdown(
         """
     What you can do with this:

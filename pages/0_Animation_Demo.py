@@ -21,7 +21,7 @@ from streamlit.hello.utils import show_code
 
 
 def animation_demo() -> None:
-
+'''
     # Interactive Streamlit elements, like these sliders, return their value.
     # This gives you an extremely simple interaction model.
     iterations = st.sidebar.slider("Level of detail", 2, 20, 10, 1)
@@ -63,7 +63,7 @@ def animation_demo() -> None:
     # We clear elements by calling empty on them.
     progress_bar.empty()
     frame_text.empty()
-
+'''
     # Streamlit widgets automatically run the script from top to bottom. Since
     # this button is not connected to any other logic, it just causes a plain
     # rerun.

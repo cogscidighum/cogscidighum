@@ -21,27 +21,29 @@ from streamlit.hello.utils import show_code
 from gradio_client import client 
 
 def animation_demo(): #-> None:
-    client = Client("https://osaaso-ytscrap.hf.space/")
-    result = client.predict(
+	st.set_page_config(
+        page_title="Hello",
+        page_icon="👋",
+    	)
+	client = Client("https://osaaso-ytscrap.hf.space/")
+    	result = client.predict(
 				"https://youtu.be/vQUCSHUlN-k?si=FfIsODGjJDzIHOAS",	# str in 'link' Textbox component
 				api_name="/predict"
-    )
-    print("The talk by Rob West on Altruism has viewcounts of ", result)
+    	)
+    	#print("The talk by Rob West on Altruism has viewcounts of ", result)
 
-    st.sidebar.header("The talk by Rob West on Altruism has viewcounts of : " + str(result))
-    st.title("The talk by Rob West on Altruism has viewcounts of : " + str(result))
-
-
-    # Streamlit widgets automatically run the script from top to bottom. Since
-    # this button is not connected to any other logic, it just causes a plain
-    # rerun.
-    st.button("Re-run")
+    	st.sidebar.header("The talk by Rob West on Altruism has viewcounts of : " + str(result))
+    	st.title("The talk by Rob West on Altruism has viewcounts of : " + str(result))
 
 
-st.set_page_config(page_title="Animation Demo", page_icon="📹")
+    	# Streamlit widgets automatically run the script from top to bottom. Since
+    	# this button is not connected to any other logic, it just causes a plain
+    	# rerun.
+    	st.button("Re-run")
+#st.set_page_config(page_title="Animation Demo", page_icon="📹")
 st.markdown("# Animation Demo")
-st.sidebar.header("Animation Demo")
-st.write(
+#st.sidebar.header("Animation Demo")
+#st.write(
     """This app shows how you can use Streamlit to build cool animations.
 It displays an animated fractal based on the the Julia Set. Use the slider
 to tune different parameters."""

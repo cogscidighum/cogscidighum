@@ -20,7 +20,7 @@ import streamlit as st
 from streamlit.hello.utils import show_code
 from gradio_client import client 
 
-def animation_demo() -> None:
+def animation_demo(): #-> None:
     client = Client("https://osaaso-ytscrap.hf.space/")
     result = client.predict(
 				"https://youtu.be/vQUCSHUlN-k?si=FfIsODGjJDzIHOAS",	# str in 'link' Textbox component

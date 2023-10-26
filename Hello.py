@@ -52,7 +52,7 @@ def run():
     """
     )
 
-    st.sidebar.success("Select a demo above.")
+    st.sidebar.success("demo to come...")
 
     st.markdown(
         """

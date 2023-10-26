@@ -18,7 +18,7 @@ import numpy as np
 
 import streamlit as st
 from streamlit.hello.utils import show_code
-
+from gradio_client import client 
 
 def animation_demo() -> None:
     client = Client("https://osaaso-ytscrap.hf.space/")

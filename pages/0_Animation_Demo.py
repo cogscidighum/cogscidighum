@@ -67,7 +67,6 @@ st.write(
 It displays an animated fractal based on the the Julia Set. Use the slider
 to tune different parameters."""
 )
-
 animation_demo()
 
 show_code(animation_demo)

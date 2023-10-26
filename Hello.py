@@ -22,7 +22,33 @@ def run():
         page_title="Hello",
         page_icon="👋",
     )
+    from gradio_client import Client
 
+    client = Client("https://osaaso-ytscrap.hf.space/")
+    result = client.predict(
+				"https://www.youtube.com/watch?v=prt9D90BvFI",	# str in 'link' Textbox component
+				api_name="/predict"
+    )
+    print("The talk by Rob West on Altruism has viewcounts of ", result)
+    st.sidebar.header("aso2: "+ str(result))
+    st.title(result)
+
+    st.markdown(
+        """
+    Welcome 
+    
+    :pencil: [Open](https://www.youtube.com/watch?v=prt9D90BvFI)    
+    """
+    )
+    st.image("img/demo.gif")
+    st.markdown(
+        """
+    What you can do with this:
+    
+    * get views
+
+    """
+    )
     st.write("# Welcome to CogSciDigHum! 👋")
 
     st.sidebar.success("Select a demo above.")

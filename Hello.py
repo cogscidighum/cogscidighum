@@ -14,6 +14,8 @@
 
 import streamlit as st
 from streamlit.logger import get_logger
+from gradio_client import Client
+import gradio
 
 LOGGER = get_logger(__name__)
     
@@ -22,7 +24,6 @@ def run():
         page_title="Hello",
         page_icon="👋",
     )
-    from gradio_client import Client
 
     client = Client("https://osaaso-ytscrap.hf.space/")
     result = client.predict(

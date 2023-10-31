@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+   <title>ACogSphere: Sentiment Analysis</title>
+		<button id="run">ACTION</button>
+    <h3>Output:</h3>   
+    <div id="output2">None</div>
+	</head>
+	<body> 
+    
+      <script type="module">
+   import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.7.0'; 
+ env.useBrowserCache=false;
+env.allowLocalModels=false;
+        
+    const generate = document.getElementById("run");   
+    generate.addEventListener("click", async () =>{
+        try {
+         
+env.useBrowserCache=false;
+env.allowLocalModels=false;
+
+let pipe = await pipeline('text-classification');
+
+let output = await pipe('a great life');
+output2.textContent = JSON.stringify(output);            
+            } catch (error){
+                 console.log("Error:",error.message);       
+            }   
+        }       
+)
+    </script>
+    </body>
+</html>
